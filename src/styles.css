@@ -1,0 +1,13 @@
+/* The app's own design system, plus every class its components use. */
+@import "../../lbs-ai-cup/src/app/globals.css";
+@source "../../lbs-ai-cup/src";
+@source "./";
+
+/* Frames must be deterministic: motion comes from Remotion, not from CSS timers. */
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+  caret-color: transparent;
+}

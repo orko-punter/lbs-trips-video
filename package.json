@@ -1,0 +1,26 @@
+{
+  "name": "lbs-trips-video",
+  "private": true,
+  "version": "1.0.0",
+  "description": "18-second product film for the LBS Trips planner, rendered with Remotion from the app's real components.",
+  "scripts": {
+    "studio": "remotion studio",
+    "render": "remotion render PlannerFilm out/lbs-trips-planner.mp4 --codec=h264 --crf=16",
+    "render:webm": "remotion render PlannerFilm out/lbs-trips-planner.webm --codec=vp9 --crf=24",
+    "still": "remotion still PlannerFilm",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "@remotion/google-fonts": "4.0.543",
+    "@remotion/tailwind-v4": "4.0.543",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}
